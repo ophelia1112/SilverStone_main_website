@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>brand</title>
+    <link rel="stylesheet" href="brand.css">
+    <script src="brand.js" defer></script>
+    <link rel="stylesheet" href="icons/iconfont.css">
+    <link rel="stylesheet" href="icons/sign/iconfont.css">
+</head>
+<body>
+<!--
+网站结构：
+导航部分要做
+
+1、头部对应四个完整模块，除了我们的产品以外，其他三个模块是下面业务的组合，变化不大，
+所以后期分为四个次母网，里面包含着业务，次母网对业务的解释是更细致的，但是仍旧可以跳转更细致的业务单独子网
+2、产品区域的title可以跳转次母网，次母网包含我们的四个产品，四个产品的流播图，对应的四个链接
+在将来将会变成四个独立的子网，分别为开发的四个大方向的产品，后期子网可以成为母网，衍生细小的后端网站
+开发工程巨大，尤其是链游和金融科技产品
+3、稳健投资部分，title进入次母网，包括五个方面的稳健投资业务，而这五个方面的业务有对应的跳转链接，
+跳转的就是在次母网上面的锚点，对应的锚点位置对业务进行了细致的解释与成果展示，链接后台数据以服务客户
+4、风险投资部分，主title可以跳转到一个次母网，两个方面的风险投资的全部内容都在次母网上面，
+learn more可以跳转到次母网上面的锚点部位
+5、各种小球的其他业务，其他小球的业务放在一个次母网里面，每一个链接对应一个锚点
+
+
+-->
+<header class="header">
+    <div id="logo-in-head">
+        <img src="imgs/logo.png" alt="fail to load image">
+    </div>
+    <div class="brand">
+        <div class="brandcontent1">SilverStone</div>
+        <div class="brandcontent2">Investment and Fund Management</div>
+    </div>
+
+</header>
+
+
+<div class="alternateImgContainer">
+    <div class="alterimgs"> <!-- 所有图片的容器 -->
+        <div class="alterimg">
+            <img src="imgs/head/ourproducts.png" alt="fail to load img">
+            <div class="imgdecorate">
+                <p class="onimgText">
+                    Check out our latest products<br>
+                    Find new chance.
+                </p>
+                <a href="#" class="onimgLink">learn more about our products ➡</a>
+            </div>
+        </div>
+
+        <div class="alterimg">
+            <img src="imgs/head/wealthmanagement.png" alt="fail to load img">
+            <div class="imgdecorate">
+                <p class="onimgText">
+                    Manage your wealth rationally<br>
+                    Fund management.
+                </p>
+                <a href="#" class="onimgLink">learn more ➡</a>
+            </div>
+        </div>
+
+        <div class="alterimg">
+            <img src="imgs/head/invest.png" alt="fail to load img">
+            <div class="imgdecorate">
+                <p class="onimgText">
+                    Get information and assistance<br>
+                    Various investment projects.
+                </p>
+                <a href="#" class="onimgLink">learn more ➡</a>
+            </div>
+        </div>
+
+         <div class="alterimg">
+            <img src="imgs/head/consult.png" alt="fail to load img">
+            <div class="imgdecorate">
+                <p class="onimgText">
+                     Formulating suitable investment plans<br>
+                   Investment consultation.</p>
+                <a href="#" class="onimgLink">learn more ➡</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="alterArrow">
+        <span class="iconfont icon-jiantou arrow left"></span>
+        <span class="iconfont icon-jiantou arrow right"></span>
+    </div>
+    <div class="guidedots">
+        <span class="iconfont icon-dian" onclick="currentImg(0)"></span>
+        <span class="iconfont icon-dian" onclick="currentImg(1)"></span>
+        <span class="iconfont icon-dian" onclick="currentImg(2)"></span>
+        <span class="iconfont icon-dian" onclick="currentImg(3)"></span>
+    </div>
+</div>
+
+<div id="guideSign">
+    <!--div class="side-guide">
+        <ul>
+            <li><a href="">Our Products</a></li>
+                <ul>
+                    <li><a href="">AI for Finance Trading</a></li>
+                    <li><a href="">Bitcoin Game--XX</a></li>
+                    <li><a href="">Fin-Tech Products</a></li>
+                    <li><a href="">Private Equity Fund</a></li>
+                </ul>
+            <li><a href="">Conservative Investment</a></li>
+                <ul>
+                    <li><a href="">Asset Management</a></li>
+                    <li><a href="">Wealth Management</a></li>
+                    <li><a href="">Real Estate Investment and Management</a></li>
+                    <li><a href="">Fixed Income Management</a></li>
+                    <li><a href="">Risk Management Services</a></li>
+            </ul>
+            <li><a href="">Verture Capital and Alternative Finance</a></li>
+                <ul>
+                    <li><a href="">Hedge Funds</a></li>
+                    <li><a href="">Non-Traditional Investment</a></li>
+                </ul>
+            <li><a href="">Other Financial Services</a></li>
+                <ul>
+                    <li><a href="">Foreign Exchange Management</a></li>
+                    <li><a href="">Tax Management</a></li>
+                    <li><a href="">Philanthropic Fund Management</a></li>
+                    <li><a href="">Education</a></li>
+                    <li><a href="">ESG Investment</a></li>
+                    <li><a href="">Insurance Management</a></li>
+                    <li><a href="">Family Office Services</a></li>
+                    <li><a href="">Carbon Trading</a></li>
+                </ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Seek Help</a></li>
+        </ul>
+
+    </div-->
+    <div>
+        <span class="iconfont icon-daohang" onclick="openguide()"></span>
+    </div>
+    <div>
+        <span class="iconfont icon-zhuce"></span>
+    </div>
+</div>
+
+
+<div id="products-title">
+    <a href="">Our Products</a>
+</div>
+
+
+<div id="products">
+       <img src="imgs/product imgs/ai.png" alt="fail to load image">
+        <div id="product-dec">
+                <p>AI Products for Financial Trade.</p>
+            <p>learn more about our artificial intelligence for quantitative trade.</p>
+        </div>
+</div>
+
+
+
+
+
+
+
+<!--hr style="margin-top: 250px"-->
+
+<div class="module-titles">
+    <a href="">Conservative Investment</a>
+    <!--次母网-->
+</div>
+
+<div id="conservative-invest">
+    <div class="conserimg-info">
+        <div class="conserimg-dec">
+            <img src="imgs/mainproducts/invest imgs/estate management.jpg" alt="fail to load image">
+        </div>
+        <div class="conserinfo">
+            <a href="">Asset Management</a>
+                <div class="conser-text">
+                Providing quantitative financial strategies for investment portfolios to high-net-worth individuals, corporations, and institutions.
+                </div>
+            <br>
+            <hr>
+        </div>
+    </div>
+    <div class="conserimg-info">
+        <div class="conserimg-dec">
+            <img src="imgs/mainproducts/invest imgs/income%20management.jpg" alt="fail to load image">
+        </div>
+        <div class="conserinfo">
+            <a href="">Fixed Income Management</a>
+            <div class="conser-text">
+                Our company offers individual clients fixed-income investment products, ensuring the safety of their principal while generating stable returns.
+            </div>
+            <br>
+            <hr>
+        </div>
+    </div>
+    <div class="conserimg-info">
+        <div class="conserimg-dec">
+            <img src="imgs/mainproducts/invest imgs/personal%20estate%20management.jpg" alt="fail to load image">
+        </div>
+        <div class="conserinfo">
+            <a href="">Wealth Management</a>
+            <div class="conser-text">
+                Primarily focused on financial planning for individual clients,
+                including tax planning, estate management, pension investments,
+                and retirement planning.
+            </div>
+            <br>
+            <hr>
+        </div>
+    </div>
+    <div class="conserimg-info">
+        <div class="conserimg-dec">
+            <img src="imgs/mainproducts/invest imgs/real%20estate(house%20estate).jpg" alt="fail to load image">
+        </div>
+        <div class="conserinfo">
+            <a href="">Real Estate Investment</a>
+            <div class="conser-text">
+                We provide real estate and other fixed-estate optimization services
+                for property developers and high-net worth individuals.
+            </div>
+            <br>
+            <hr>
+        </div>
+    </div>
+    <div class="conserimg-info">
+        <div class="conserimg-dec">
+            <img src="imgs/mainproducts/invest imgs/risk%20control.jpg" alt="fail to load image">
+        </div>
+        <div class="conserinfo">
+            <a href="">Risk Management Services</a>
+            <div class="conser-text">
+                We provide regular quantitative risk analysis services and periodic investment adjustment strategies for the assets
+                of every investor.
+            </div>
+            <br>
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="module-titles">
+    <a href="#">
+        Venture Capital and Alternative Finance
+    </a>
+</div>
+
+<div id="risk-invest">
+    <div id="risk-invest-product">
+        <div>Hedge Funds</div>
+        <div>
+            Our company offers a variety of hedge fund projects,
+            providing clients with multiple investment strategies.
+            Relying on trading data,
+            we implement arbitrage, quantitative trading,
+            and long-short strategies,
+            primarily targeting high-net-worth clients who can bear a certain level of risk.
+        </div>
+    </div>
+    <div id="riskInvest-img">
+        <img src="imgs/mainproducts/riskInvestment/hedge fund.jpg" alt="fail to load img">
+        <div class="InvestImg-dec">
+            <a href="">Learn More</a>
+        </div>
+    </div>
+</div>
+
+<div id="alternative-invest">
+    <div id="alterInvest-img">
+        <img src="imgs/mainproducts/riskInvestment/alternative invest.jpg" alt="fail to load img">
+        <div class="InvestImg-dec">
+            <a href="">Learn More</a>
+        </div>
+    </div>
+    <div id="alterInvest-introduce">
+        <div>Non-Traditional Investment</div>
+        <div>
+            Our group also offers investment planning for non-traditional assets,
+            such as artwork, fine wine, cryptocurrencies, gaming, and NFTs.
+            You can also explore our new AI and blockchain gaming products to earn token
+            rewards or inquire about purchasing tokens for investment.
+        </div>
+    </div>
+</div>
+
+
+<div class="module-titles">
+    <a href="">Other Financial Services</a>
+</div>
+<div id="other-service">
+    <div class="service-ball">
+        <a href="">Foreign Exchange Management</a>
+    </div>
+    <div class="service-ball">
+        <a href="">Tax Management</a>
+    </div>
+    <div class="service-ball">
+        <a href="">ESG Investment</a>
+    </div>
+    <div class="service-ball">
+        <a href="">Family Office Services</a>
+    </div>
+    <div class="service-ball">
+        <a href="">Education</a>
+    </div>
+    <div class="service-ball">
+        <a href="">Philanthropic Fund Management</a>
+    </div>
+    <div class="service-ball">
+        <a href="">Carbon Trading</a>
+    </div>
+    <div class="service-ball">
+        <a href="">Insurance Management</a>
+    </div>
+</div>
+
+
+<div id="our-company">
+    <div id="company-title">
+            <a href="">SilverStone</a>
+    </div>
+    <div id="introduce-of-company">
+        <div id="slogen-img">
+            <img src="imgs/logo.png" alt="fail to load img">
+        </div>
+
+        <div id="introduce">
+        <p>SliverStone is built in 2024, a new era.</p>
+        <p>And till now, we serve people more than 3 million, including the companies.</p>
+        <p>We offer different financial products and service to help boost your estate.</p>
+        <p>And we believe the new path will be created by us together.</p>
+        </div>
+
+    </div>
+    <div id="social">
+        Social
+    </div>
+    <div id="social-content">
+        <div class="social-link link1">
+            <div class="link1div">
+                    <span class="iconfont icon-tuite">
+                    </span>
+                <div class="word">
+                    <a href="">Twitter</a>
+                    </div>
+            </div>
+            <div class="link1div">
+                    <span class="iconfont icon-discard"></span>
+                <div class="word">
+                    <a href="">Discord</a>
+                </div>
+            </div>
+
+            <div class="link1div">
+                    <span class="iconfont icon-linkedin"></span>
+                <div class="word">
+                    <a href="">LinkedIn</a>
+                    </div>
+            </div>
+
+            <div class="link1div">
+                    <span class="iconfont icon-gmail"></span>
+                <div class="word">
+                    <a href="">Gmail</a>
+                   </div>
+            </div>
+            <div class="link1div">
+                    <span class="iconfont icon-bxl-reddit"></span>
+                <div class="word">
+                    <a href="">Reddit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-link link2">
+            <div class="link2div">
+                    <span class="iconfont icon-facebook-fill"></span>
+                <div class="word">
+                    <a href="">
+                        Facebook
+                    </a>
+                    </div>
+            </div>
+
+            <div class="link2div">
+                    <span class="iconfont icon-spotify"></span>
+                <div class="word">
+                    <a href="">Spotify</a>
+                </div>
+            </div>
+
+            <div class="link2div">
+                    <span class="iconfont icon-TEL"></span>
+                <div class="word">
+                    <a href="">Telegram</a>
+                </div>
+            </div>
+
+            <div class="link2div">
+                    <span class="iconfont icon-whatsapp"></span>
+                <div class="word">
+                    <a href="">WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="link2div">
+                    <span class="iconfont icon-wechat"></span>
+                <div class="word">
+                    <a href="">Wechat</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<footer>
+    <p>&copy; <span id="year">2025</span> &ensp;&ensp;SilverStone. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
+
+
+</body>
+</html>
+

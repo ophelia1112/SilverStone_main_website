@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1733384828666') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin:before {
+  content: "\e787";
+  font-size: 35px;
+}
+
+.icon-arrow-right-copy-copy:before {
+  content: "\e603";
+}
+
+.icon-gmail:before {
+  content: "\e6a5";
+  font-size: 35px;
+}
+
+.icon-wechat:before {
+  content: "\e629";
+  font-size: 35px;
+}
+
+
+.icon-spotify:before {
+  content: "\e807";
+  font-size: 35px;
+}
+
+.icon-jiantou:before {
+  content: "\e604";
+  color:white;
+  font-size: 50px;
+}
+
+
+.icon-daohang:before {
+  content: "\e62b";
+  font-size: 50px;
+}
+
+.icon-TEL:before {
+  content: "\e614";
+  font-size: 35px;
+}
+
+
+.icon-facebook-fill:before {
+  content: "\e88d";
+  font-size: 35px;
+}
+
+.icon-dian:before {
+  content: "\e7a5";
+  font-size: 30px;
+  opacity: 0.8; /*透明度设置*/
+
+}
+.icon-dian:hover:before {
+  color: black;
+  opacity: 1;
+}
+
+
+.icon-ins:before {
+  content: "\e616";
+  font-size: 35px;
+}
+
+.icon-bxl-reddit:before {
+  content: "\e6ea";
+  font-size: 35px;
+}
+
+.icon-whatsapp:before {
+  content: "\ea07";
+  font-size: 35px;
+}
+
+.icon-Location:before {
+  content: "\e621";
+}
+
+.icon-hr:before {
+  content: "\e60a";
+}
+
+.icon-icon_220:before {
+  content: "\e60d";
+}
+
+
+
+.icon-discard:before {
+  content: "\e591";
+  font-size: 35px;
+}
+
+.icon-tuite:before {
+  content: "\e617";
+  font-size: 33px;
+}
+
+.icon-h-line:before {
+  content: "\e516";
+}
+
